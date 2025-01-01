@@ -1,0 +1,15 @@
+baseURL = 'https://cst-bg.net/'
+languageCode = 'en-us'
+title = 'CST company website'
+theme = "hyde"
+
+
+[params]
+  description = "Professional software development company in Svilengrad, BULGARIA"
+
+[Menus]
+  main = [
+      {Name = "Github", URL = "https://github.com/CSTLTD/"},
+      {Name = "LinkedIn", URL = "https://www.linkedin.com/company/cst-eood/"}
+  ]
+
