@@ -3,6 +3,8 @@ locale = 'en-us'
 title = 'CST company website'
 theme = "hyde"
 
+
+
 [params]
   description = "Professional software development company in Svilengrad, BULGARIA"
   # This section replaces the old top-level 'author'
@@ -11,14 +13,26 @@ theme = "hyde"
 
 [menu]
   [[menu.main]]
-    name = "About us"
-    url = "/about/"
-    weight = 10
+    name = "Services"
+    url = "/services/"
+    weight = 15
   [[menu.main]]
-    name = "Github"
-    url = "https://github.com/CSTLTD/"
+    name = "Projects"
+    url = "/projects/"
     weight = 20
   [[menu.main]]
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/company/cst-eood/"
+    name = "Careers"
+    url = "/careers/"
+    weight = 25
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
     weight = 30
+  [[menu.main]]
+    name = "Blog"
+    url ="/blog/"
+    weight = 40
+  [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # This allows <iframe> tags for maps

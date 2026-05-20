@@ -1,0 +1,23 @@
+<aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-logo">
+  <a href="{{ "/" | absURL }}">
+    <img src="{{ "images/cst-logo.jpg" | absURL }}" alt="{{ .Site.Title }} Logo" class="theme-logo">
+  </a>
+</div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        {{ range .Site.Menus.main -}}
+        <li>
+          <a href="{{ .URL }}" {{ if .Params.external }}target="_blank" rel="noopener" {{ end }}>
+            {{ .Name }}
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </nav>
+
+  </div>
+</aside>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.161.1">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Why is application portability difficult and how to prepare for it &middot; CST company website</title>
+  <meta name="description" content="Environment dependencies complicate application portability, but decoupled architectures ensure seamless platform migration" />
+
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/print.css"
+    media="print" />
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/hyde-bundle.css"
+    media="all" />  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/custom.css">
+  
+</head>
+
+
+<body class=" ">
+
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-logo">
+  <a href="http://localhost:1313/">
+    <img src="http://localhost:1313/images/cst-logo.jpg" alt="CST company website Logo" class="theme-logo">
+  </a>
+</div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a></li>
+        <li>
+          <a href="/services/" >
+            Services
+          </a>
+        </li><li>
+          <a href="/projects/" >
+            Projects
+          </a>
+        </li><li>
+          <a href="/careers/" >
+            Careers
+          </a>
+        </li><li>
+          <a href="/contact/" >
+            Contact
+          </a>
+        </li><li>
+          <a href="/blog/" >
+            Blog
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</aside>
+
+  <main class="content container">
+    <div class="post">
+  <h1>Why is application portability difficult and how to prepare for it</h1>
+  <h3 id="what-portability-means">What portability means?</h3>
+<p>Application portability means that an application can be installed, used and supported easily on different host environments without needing to change the code. While portability has different aspects, all of which must be considered, it can be split in two components - the application itself and the environment where the application is running. To achieve portability you need both, an application which is designed to be portable and a new environment which is compatible with the application.</p>
+<h3 id="why-do-you-need-portable-applications">Why do you need portable applications?</h3>
+<p>There are a variety of reasons why apps must be migrated from one environment to another, here are just a few common scenarios.</p>
+<ul>
+<li>Deployment of application on new customer environment.</li>
+<li>Migrating application from on-premise to the cloud.</li>
+<li>Integrating software in a brand new solution, e.g. edge devices.</li>
+<li>Cost optimization - move to a cheaper infrastructure.</li>
+<li>Avoid vendor lock-in - ability to move if needed in the future.</li>
+</ul>
+<h2 id="types-of-applications">Types of applications</h2>
+<p>Different application architectures can differ quite a bit in how difficult are they to migrate.</p>
+<h4 id="embedded-software">Embedded software</h4>
+<p>Applications which often run without on OS directly on a specifically supported hardware device. Those can be extremely difficult to port, because they are rigid, tightly integrated with the host environment and often have custom dependencies which are hard to carry over.</p>
+<h4 id="legacy-monolith">Legacy monolith</h4>
+<p>This is old software which is usually not updated often and does not support modern OS and devices. A monolith also means that the application is big and features a lot of functionality. Bigger is usually harder to migrate than smaller pieces.</p>
+<h4 id="loosely-coupled">Loosely coupled</h4>
+<p>Those applications are broken down into modules, each responsible for certain functionality. Migration is much easier as it can be done separately for each module which is simpler and easier to move.</p>
+<h4 id="containerized-micro-services">Containerized micro services</h4>
+<p>This is modern application architecture, where software is very loosely coupled (micro services) which communicate with each other via a standard protocol like HTTP/REST. Connectivity to other systems like ingress, storage, monitoring is clearly defined via standard interfaces. Migration is facilitated by the fact that this software runs on a platform like Docker/Kubernetes, has packaging and is designed with portability from the start.</p>
+<h3 id="aspects-of-portability">Aspects of portability</h3>
+<p>Migration of the application is not all that is needed. Here is a full list of things to migrate.</p>
+<h4 id="workloads">Workloads</h4>
+<p>The application itself.</p>
+<h4 id="data">Data</h4>
+<p>This can be user data or application data, configuration or any other resources.</p>
+<h4 id="user-access">User Access</h4>
+<p>We have to pay attention to how the software is accessed on the new environment. Are there any specific requirements like latency or bandwidth, geographic or security restrictions which must be fulfilled.</p>
+<h4 id="external-systems">External systems</h4>
+<p>Applications are not isolated and often work together with other systems like IDM, monitoring and alerting, logging, etc. Those must be carried over as well and often are some of the most difficult to port.</p>
+<h3 id="how-to-migrate-your-application-to-a-new-environment">How to migrate your application to a new environment</h3>
+<p>The easiest migration is moving state of the art application which has been designed with industry best practices from the beginning. But what about more difficult legacy solutions?</p>
+<h4 id="document-migration-requirements">Document migration requirements.</h4>
+<p>Try to identify all requirements and dependencies on the software that needs to be migrated and see if those can be implemented.</p>
+<h4 id="use-tools">Use tools</h4>
+<p>Also, there are some tools which can automatically move software between environments, however be mindful that those might not work 100% and you will need to manually adjust. Take advantage of virtualization and containers if possible.</p>
+<h4 id="pay-attention-to-security">Pay attention to security</h4>
+<p>Pay close attention to user data and security and may be leave the old environment around for some time, just in case you need to go back if something goes wrong.</p>
+<h4 id="redesign-the-app">Redesign the app</h4>
+<p>If migration is very difficult, the application itself must be redesigned in order to have support for portability.</p>
+<h4 id="automate-the-migration">Automate the migration</h4>
+<p>While doing the migration, try to automated as much as possible. Use tooling like Ansible and Terraform, CI/CD to build well documented, repeatable scripts which do the migration for you.</p>
+
+</div>
+
+
+
+    <footer class="site-footer">
+  <div class="footer-social">
+    <a href="https://github.com/CSTLTD/" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/company/cst-eood/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.facebook.com/csteood" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://twitter.com/cst_eood" target="_blank" rel="noopener">Twitter</a>
+    <a href="mailto:contact@cst-bg.net">Email</a>
+  </div>
+
+  <p class="footer-copyright">
+    &copy; 2026 <strong>CST LTD</strong>. All rights reserved.
+  </p>
+
+  <div class="footer-legal">
+    <a href="http://localhost:1313/privacy/terms-and-conditions/">Privacy & Terms of Use</a>
+  </div>
+</footer>
+  </main>
+
+  
+
+</body>
+
+</html>

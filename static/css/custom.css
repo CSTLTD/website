@@ -1,0 +1,572 @@
+/* ==========================================================================
+   1. SIDEBAR & LOGO
+   ========================================================================== */
+
+.sidebar {
+    padding-top: 0 !important;
+}
+
+.sidebar-logo {
+    margin-top: 0;
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.theme-logo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    object-fit: contain;
+}
+
+.sidebar-nav {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 3rem;
+}
+
+.sidebar-nav li {
+    margin-bottom: 1.2rem;
+}
+
+.sidebar-nav li a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    transition: color 0.2s;
+}
+
+.sidebar-nav li a:hover {
+    color: #fff;
+}
+
+/* ==========================================================================
+   2. GLOBAL TITLES & HEADERS
+   ========================================================================== */
+
+html body .service-group-title,
+.section-title {
+    display: block !important;
+    color: #ac4142 !important;
+    font-size: 1.8rem !important;
+    margin-top: 3.5rem !important;
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 2px solid #eee !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    letter-spacing: 2px !important;
+}
+
+.section-title:first-of-type,
+html body .service-group-title:first-of-type {
+    margin-top: 0 !important;
+}
+
+/* ==========================================================================
+   3. SERVICES & LIST PAGES (Horizontal Cards)
+   ========================================================================== */
+
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem 0 4rem;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service-image {
+    flex: 1;
+    min-width: 200px;
+    max-width: 50%;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-details {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.service-details h2 {
+    margin-top: 0;
+    color: #ac4142;
+    font-size: 1.5rem;
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #ac4142;
+    color: #fff !important;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   4. HOME PAGE GRID (3-Column Layout)
+   ========================================================================== */
+
+.home-section {
+    padding: 3rem 0;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.home-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Blog Cards */
+.blog-preview {
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    background: #f0f0f0;
+}
+
+.card-content {
+    padding: 1.2rem;
+}
+
+/* Client Logo Cards */
+.client-link-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    padding: 1.5rem;
+    text-decoration: none !important;
+}
+
+.client-logo {
+    max-width: 85%;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.home-card:hover .client-logo {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   5. CONTACT, FOOTER & MISC
+   ========================================================================== */
+
+.contact-form {
+    background: #fdfdfd;
+    padding: 2rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+.site-footer {
+    margin-top: 6rem;
+    padding: 3rem 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-social,
+.footer-copyright,
+.footer-legal {
+    margin-bottom: 1.2rem;
+}
+
+.footer-social a {
+    margin: 0 15px;
+    font-weight: 700;
+    color: #ac4142;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-social a:hover {
+    color: #8d3536;
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.footer-legal a {
+    font-size: 0.8rem;
+    color: #999;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-legal a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+.funding-disclaimer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 3rem auto 0;
+    max-width: 800px;
+}
+
+.funding-logo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   6. RESPONSIVE DESIGN (Consolidated)
+   ========================================================================== */
+
+@media (min-width: 48em) {
+    .sidebar {
+        padding-bottom: 0 !important;
+    }
+
+    .sidebar-sticky {
+        padding: 0 !important;
+        margin-top: 0 !important;
+        top: 0 !important;
+    }
+
+    .submit-button {
+        width: auto;
+    }
+}
+
+@media (max-width: 48em) {
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        flex-direction: column;
+    }
+
+    .service-image {
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .funding-disclaimer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Target mobile view properties for the highlight layout block */
+    .highlight-wrapper {
+        flex-direction: column !important;
+    }
+
+    .highlight-visual-side {
+        width: 100% !important;
+        height: 240px !important;
+    }
+
+    .highlight-box-side {
+        padding: 3rem 1.25rem 2rem 1.25rem !important;
+    }
+
+    .services-circle-badge {
+        top: -42px !important;
+        right: 25px !important;
+    }
+}
+
+/* ==========================================================================
+   7. COMPACT TWO-ROW METADATA & SHARE BAR (REALIGNED)
+   ========================================================================== */
+
+.blog-meta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 0.8rem 0;
+    padding-bottom: 0.2rem;
+}
+
+.meta-left-group {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.meta-author-avatar {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    border: 1px solid #eaeaea !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+    align-self: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.placeholder-avatar {
+    background-color: #ac4142;
+    opacity: 0.2;
+}
+
+.meta-text-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.25;
+}
+
+.meta-row-one {
+    font-weight: 700;
+    color: #313131;
+    font-size: 0.95rem;
+    margin: 0;
+    padding: 0;
+}
+
+.meta-row-two {
+    font-size: 0.82rem;
+    color: #777;
+    margin: 0;
+    padding: 0;
+}
+
+.meta-divider {
+    margin: 0 4px;
+    color: #ccc;
+}
+
+.meta-right-group {
+    display: flex;
+    align-items: center;
+}
+
+.share-btn {
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+    color: #ac4142;
+    background-color: #f5f5f5;
+}
+
+.service-details h2 {
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.6rem;
+    color: #ac4142;
+    font-size: 1.5rem;
+}
+
+.post-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: -0.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.tag-hash {
+    color: #ac4142 !important;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.tag-hash:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.service-details p {
+    margin-top: 0.4rem;
+}
+
+/* ==========================================================================
+   8. HOME SERVICES HIGHLIGHT SECTION (REFITTED)
+   ========================================================================== */
+
+.home-services-highlight {
+    padding-top: 0 !important; /* Prevents double gaps at top of homepage */
+    margin-bottom: 1rem;
+}
+
+.highlight-wrapper {
+    display: flex;
+    align-items: stretch;
+    background: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.highlight-visual-side {
+    flex: 1;
+    min-width: 42%;
+}
+
+.highlight-visual-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.highlight-box-side {
+    flex: 1.2;
+    padding: 2.5rem 2.2rem;
+}
+
+.highlight-box-side h2 {
+    color: #ac4142 !important;
+    font-size: 1.8rem !important;
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    letter-spacing: 2px !important;
+    border-bottom: none !important;
+}
+
+.highlight-intro {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin-bottom: 1.2rem;
+}
+
+/* Clickable Highlight Rows Container */
+.highlight-services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; /* Tightened gap because padding handles active target block space */
+    margin: 0;
+    padding: 0;
+}
+
+/* Individual Clickable Service Row Component */
+.highlight-service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    text-decoration: none !important;
+    padding: 0.8rem;
+    border-radius: 6px;
+    background: transparent;
+    transition: all 0.25s ease-in-out;
+    opacity: 0.65; /* Muted default state mimicking your grayscale client effect */
+}
+
+.service-bullet {
+    width: 9px;
+    height: 9px;
+    background: #ac4142;
+    border-radius: 50%;
+    margin-top: 6px;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+.service-text strong {
+    color: #313131;
+    font-size: 1.08rem;
+    display: block;
+    margin-bottom: 0.2rem;
+    transition: color 0.25s ease;
+}
+
+.service-text p {
+    margin: 0 !important;
+    font-size: 0.92rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Interactive Hover/Highlight State (Synchronized with Card Behavior) */
+.highlight-service-item:hover {
+    opacity: 1; /* Fully illuminated look */
+    background-color: #fafafa;
+    transform: translateX(6px); /* Clean forward slide shift */
+    box-shadow: inset 3px 0 0 #ac4142, 0 4px 10px rgba(0, 0, 0, 0.02); /* Solid left bar indicator */
+}
+
+.highlight-service-item:hover .service-bullet {
+    transform: scale(1.3); /* Micro scale pop on active bullet indicator */
+}
+
+.highlight-service-item:hover .service-text strong {
+    color: #ac4142; /* Title instantly catches company red branding on hover */
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.161.1">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>13 clues you are doing DevOps right &middot; CST company website</title>
+  <meta name="description" content="These thirteen unmistakable signs prove your team has achieved peak DevOps maturity" />
+
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/print.css"
+    media="print" />
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/hyde-bundle.css"
+    media="all" />  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/custom.css">
+  
+</head>
+
+
+<body class=" ">
+
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-logo">
+  <a href="http://localhost:1313/">
+    <img src="http://localhost:1313/images/cst-logo.jpg" alt="CST company website Logo" class="theme-logo">
+  </a>
+</div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://localhost:1313/">Home</a></li>
+        <li>
+          <a href="/services/" >
+            Services
+          </a>
+        </li><li>
+          <a href="/projects/" >
+            Projects
+          </a>
+        </li><li>
+          <a href="/careers/" >
+            Careers
+          </a>
+        </li><li>
+          <a href="/contact/" >
+            Contact
+          </a>
+        </li><li>
+          <a href="/blog/" >
+            Blog
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</aside>
+
+  <main class="content container">
+    <div class="post">
+  <h1>13 clues you are doing DevOps right</h1>
+  <p>Here are 13 best practices which I think are a good indicator for professional DevOps team.</p>
+<h3 id="do-you-have-fully-automatic-deployments">Do you have fully automatic deployments?</h3>
+<p>Having a 100% automated deployment is an essential part of good DevOps practices. It enables a software team to quickly iterate, deploy often and have a good general trust in the running software. Deployments can be triggered by some event like commit or manually. It is good practice to also have automated rollback procedure, just in case something goes wrong.</p>
+<h3 id="do-you-have-zero-downtime-deployment">Do you have zero-downtime deployment?</h3>
+<p>Having zero-downtime deployment is essential for a good user experience and for the release velocity of your DevOps team. There is a lot of work that goes into supporting rolling upgrades like multiple application instances, load-balancers, decoupled state management, CI/CD and others.</p>
+<h3 id="do-you-have-release-management-documentation">Do you have release management documentation?</h3>
+<p>As good as a release management process is, it must be well documented and made available for the whole software team. Having documentation not only means quick on-boarding for new team members, but brings order by having the whole team synchronized on how release management works. This involves all parts of the team, not only DevOps but also developers and testers.</p>
+<h3 id="are-all-software-components-versioned">Are all software components versioned?</h3>
+<p>Every software component which is deployed either for testing, integration or in front of live users should be versioned and linked to the release notes. A good approach is to use semantic versioning and also include a GIT-SHA, so that the exact commit history can be linked to the running software.</p>
+<h3 id="have-you-implemented-performance-metrics-monitoring">Have you implemented performance metrics monitoring?</h3>
+<p>Once the software has been deployed to the host environment, performance metrics provide the insight to know if the performance is sufficient. Often performance metrics can be a clue to design issues which only become obvious under particular situations like user traffic, end devices and timing. Not having such information can cost time, resources and diminish the user experience of the product.</p>
+<h3 id="do-you-run-automatic-tests-as-part-of-the-builddeploy-process">Do you run automatic tests as part of the build/deploy process?</h3>
+<p>Having a strict criteria for every deployable component should be documented and implemented as automatic test. These tests allow DevOps to catch faulting software before reaching the users. Another benefit is also continuous improvement in quality by the extension of tests covering newly discovered issues.</p>
+<h3 id="do-you-have-automatic-vulnerability-scanning">Do you have automatic vulnerability scanning?</h3>
+<p>Security must be taken extremely seriously and automatic vulnerability scanning is just one aspect of security. Tools like Anchore enable you to scan docker images against a public database of known vulnerabilities, which is regularly updated. However, one should not assume that passing these test is a sufficiently high bar of security.</p>
+<h3 id="do-you-have-fully-automated-infrastructure-as-code">Do you have fully automated Infrastructure as Code?</h3>
+<p>Infrastructure as Code is a relatively new trend in DevOps, but a well established and very practical one. Some of the benefits are the ability to orchestrate host environments quickly and a highly structured and repeatable manner. A good practice is to have your infrastructure code committed in Git. Some useful tools to implement this are Ansible, Chef, Puppet, Terraform.</p>
+<h3 id="do-you-have-bug-database">Do you have bug database?</h3>
+<p>Having a system to manage bugs and issues is a good practice which enables to efficient management of bugs in the software. It provides a level of visibility and helps identify areas where more work is needed.</p>
+<h3 id="do-you-write-tests-for-all-newly-found-bugs">Do you write tests for all newly found bugs?</h3>
+<p>One other benefit of having a bug database is that you can connect it with automatic tests which cover know bugs in the future. This will prevent a bug reappearing again in the future once it is caught and fixed.</p>
+<h3 id="do-you-have-good-logs">Do you have good logs?</h3>
+<p>Having a good log management is absolutely essential to DevOps and system quality. Not having enough logs or insufficient quality of logs can mean being unable to fix an issue. There are several aspect in logging which must be implemented.<br>
+Centralized logging - collect log information from all running components in a centralized system.<br>
+Having enough detail resolution - the ability to collect all necessarily parameters like user, environment, date and time, software version, input/output.<br>
+A good logging strategy enables developers to reproduce issues with close to 100% realistic conditions on a local dev environment and diagnose and fix the issue.</p>
+<h3 id="do-you-have-system-and-data-recovery-strategy">Do you have system and data recovery strategy?</h3>
+<p>Doing backups is just not enough. You should plan for recovery which includes backup, orchestration and installation. Your recovery strategy should account for the host environment, application and user and state data. Ideally you should be able to bring up the whole infrastructure automatically if it is destroyed.</p>
+<h3 id="do-you-have-separate-development-test-integration-and-production-environments">Do you have separate development, test, integration and production environments?</h3>
+<p>A good DevOps teams always have distinct environments for development, testing, integration and production. Those environments should ideally be identical and software flow between them should be managed by a system such. For example untested software should never be installed on production.</p>
+
+</div>
+
+
+
+    <footer class="site-footer">
+  <div class="footer-social">
+    <a href="https://github.com/CSTLTD/" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/company/cst-eood/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.facebook.com/csteood" target="_blank" rel="noopener">Facebook</a>
+    <a href="https://twitter.com/cst_eood" target="_blank" rel="noopener">Twitter</a>
+    <a href="mailto:contact@cst-bg.net">Email</a>
+  </div>
+
+  <p class="footer-copyright">
+    &copy; 2026 <strong>CST LTD</strong>. All rights reserved.
+  </p>
+
+  <div class="footer-legal">
+    <a href="http://localhost:1313/privacy/terms-and-conditions/">Privacy & Terms of Use</a>
+  </div>
+</footer>
+  </main>
+
+  
+
+</body>
+
+</html>
