@@ -3,7 +3,7 @@ title: "Why is application portability difficult and how to prepare for it"
 date: 2026-05-06T11:37:34+03:00
 author: "Angel Kafazov"
 author_image: "/images/Angel.jpg"
-tags: []
+tags: ["portability", "cloud", "migration", "devops", "infrastructure", "application"]
 weight: 50
 image: "/images/computer-programming.jpeg"
 description: "Environment dependencies complicate application portability, but decoupled architectures ensure seamless platform migration"

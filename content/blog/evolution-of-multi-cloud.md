@@ -1,10 +1,13 @@
 ---
 title: "Why Is Cloud Integration The Evolution Of Multi-Cloud"
+date: 2026-05-06T11:37:34+03:00
+author: "Angel Kafazov"
+author_image: "/images/Angel.jpg"
+tags: ["multicloud", "hybridcloud", "cloud", "integration", "devops", "daiteap"]
 weight: 30
 image: "/images/multi-cloud-integration-layer.png"
 description: "Cloud integration unites isolated multi-cloud environments into a seamless ecosystem"
 featured: false
-date: 2026-05-06T11:37:34+03:00
 draft: false
 ---
 

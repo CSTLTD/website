@@ -1,10 +1,13 @@
 ---
 title: "ALTERNATIVE"
+date: 2026-05-06T11:37:34+03:00
+author: "Angel Kafazov"
+author_image: "/images/Angel.jpg"
+tags:
 weight: 20
 image: "/images/alternative-logo-resized.png"
 description: "“ALTERNATIVE”: an experimental model to study the effects of pollutants on cardiac tissue"
 featured: false
-date: 2026-05-06T11:37:34+03:00
 draft: false
 ---
 

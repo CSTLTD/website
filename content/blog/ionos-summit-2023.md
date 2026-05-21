@@ -1,16 +1,25 @@
 ---
 title: "IONOS Summit 2023"
+date: 2026-05-06T11:37:34+03:00
+author: "Angel Kafazov"
+author_image: "/images/Angel.jpg"
+tags: ["LevelUp", "IONOSsummit", "CST", "ALTERNATIVE", "TechInnovation"]
 weight: 10
 image: "/images/ionos-summit.jpg"
 description: "Exploring the Future of Technology: IONOS Summit 2023"
 featured: false
-date: 2026-05-06T11:37:34+03:00
 draft: false
 ---
 
 ### Exploring the Future of Technology: IONOS Summit 2023
 
 As the CTO of CST, I had the privilege of attending the #IONOSsummit 2023 in Berlin. It was an enlightening experience, and I'd like to extend my heartfelt thanks to #IONOS and Martin Batz for hosting this exceptional event. This summit provided us with the opportunity to exchange ideas and immerse ourselves in the exciting new developments within IONOS, cloud-native solutions, and AI.
+
+<div class="blog-image-row">
+  <img src="/images/ionos-summit.jpg" alt="Conference hall with attendees at IONOS Summit 2023">
+  <img src="/images/Angel_and_Martin.jpeg.jpg" alt="Angel and Martin">
+  <img src="/images/Angel_at_IONOSsummit.jpg" alt="Angel at IONOS Summit">
+</div>
 
 **A Promising Start: CST's Collaboration with IONOS on the #ALTERNATIVE Project**  
 One of the most exciting aspects of the IONOS Summit was the announcement of the partnership between CST and IONOS on the #ALTERNATIVE project. As a CTO, it's incredibly inspiring to see how collaboration can ignite innovation. I'm looking forward about the possibilities that lie ahead. This partnership marks the beginning of an exciting journey towards groundbreaking advancements in the tech industry.

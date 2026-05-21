@@ -35,4 +35,4 @@ theme = "hyde"
   [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # This allows <iframe> tags for maps
+      unsafe = true  # This allows hugo render raw HTML snippets inside Markdown files

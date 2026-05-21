@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Portability on CST company website</title>
+    <link>http://localhost:1313/tags/portability/</link>
+    <description>Recent content in Portability on CST company website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 May 2026 11:37:34 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/portability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why is application portability difficult and how to prepare for it</title>
+      <link>http://localhost:1313/blog/app-portability/</link>
+      <pubDate>Wed, 06 May 2026 11:37:34 +0300</pubDate>
+      <guid>http://localhost:1313/blog/app-portability/</guid>
+      <description>&lt;h3 id=&#34;what-portability-means&#34;&gt;What portability means?&lt;/h3&gt;&#xA;&lt;p&gt;Application portability means that an application can be installed, used and supported easily on different host environments without needing to change the code. While portability has different aspects, all of which must be considered, it can be split in two components - the application itself and the environment where the application is running. To achieve portability you need both, an application which is designed to be portable and a new environment which is compatible with the application.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

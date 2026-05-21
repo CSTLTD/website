@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Multicloud on CST company website</title>
+    <link>http://localhost:1313/tags/multicloud/</link>
+    <description>Recent content in Multicloud on CST company website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 06 May 2026 11:37:34 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/multicloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why Is Cloud Integration The Evolution Of Multi-Cloud</title>
+      <link>http://localhost:1313/blog/evolution-of-multi-cloud/</link>
+      <pubDate>Wed, 06 May 2026 11:37:34 +0300</pubDate>
+      <guid>http://localhost:1313/blog/evolution-of-multi-cloud/</guid>
+      <description>&lt;p&gt;When most people talk about multi-cloud as an architectural approach, they usually refer to the usage of more than one cloud provider to run their applications and services. And while using more than one provider is great in some situations by itself, it still lacks the integration between those providers which applications need in order to form a coherent and highly flexible solution. A multi-cloud solution without integration means that software cannot easily communicate, share state, and is not governed by the same policy rules. In this post I will explore the different aspects of cloud integration, what benefits it provides beyond basic multi-cloud and why I think it is the next natural evolution of multi-cloud.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why Should Companies Develop a Multi-Cloud Strategy?</title>
+      <link>http://localhost:1313/blog/multi-cloud-strategy/</link>
+      <pubDate>Wed, 06 May 2026 11:37:34 +0300</pubDate>
+      <guid>http://localhost:1313/blog/multi-cloud-strategy/</guid>
+      <description>&lt;p&gt;Digital transformation has been accelerated by the advent of public cloud providers like AWS, GCP and Azure. Companies are leveraging this technology by migrating legacy application from on-premise data centers to public cloud and are developing new software solutions using a cloud-native principles. Next to established cloud architectures like private, public and hybrid-cloud some companies are also looking forward multi-cloud solutions, which is the use of multiple public cloud providers at once. In this post we want to help you decide if and why should your company develop a multi-cloud strategy by looking at the driving factors behind multi-cloud and how this technology can solve problems that the other approaches cannot.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

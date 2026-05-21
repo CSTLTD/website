@@ -1,10 +1,13 @@
 ---
 title: "Why is it important to learn GIT at expert level?"
+date: 2026-05-06T11:37:34+03:00
+author: "Angel Kafazov"
+author_image: "/images/Angel.jpg"
+tags: ["git", "versioncontrol", "programming", "education"]
 weight: 60
 image: "/images/learn_git.jpg"
 description: "Expert Git mastery eliminates workflow bottlenecks and ensures absolute code integrity"
 featured: false
-date: 2026-05-06T11:37:34+03:00
 draft: false
 ---
 

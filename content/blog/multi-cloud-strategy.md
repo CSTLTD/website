@@ -1,10 +1,13 @@
 ---
 title: "Why Should Companies Develop a Multi-Cloud Strategy?"
+date: 2026-05-06T11:37:34+03:00
+author: "Angel Kafazov"
+author_image: "/images/Angel.jpg"
+tags: ["daiteap", "multicloud", "cloud", "strategy", "devops", "infrastructure"]
 weight: 70
 image: "/images/cloud_technology.jpg"
 description: "A multi-cloud strategy avoids vendor lock-in and maximizes operational resilience"
 featured: false
-date: 2026-05-06T11:37:34+03:00
 draft: false
 ---
 
