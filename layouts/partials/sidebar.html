@@ -1,0 +1,24 @@
+<aside class="sidebar">
+  <div class="container sidebar-sticky">
+    
+    <div class="sidebar-logo">
+      <a href="{{ .Site.BaseURL }}" aria-label="CST Home">
+        <img src="{{ .Site.BaseURL }}images/cst-logo-white.png" alt="CST Logo" class="theme-logo-img">
+      </a>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        {{ range .Site.Menus.main -}}
+        <li>
+          <a href="{{ .URL }}" {{ if .Params.external }}target="_blank" rel="noopener" {{ end }}>
+            {{ .Name }}
+          </a>
+        </li>
+        {{- end }}
+      </ul>
+    </nav>
+
+  </div>
+</aside>
