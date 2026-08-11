@@ -1,74 +1,48 @@
 {{ define "main" -}}
-<div class="services-grid">
-    {{ range .Pages -}}
-    <article class="service-card">
+<div class="page-header">
+  <h1 class="page-title">{{ .Title }}</h1>
+  <p class="page-description">Engineering insights, technical deep dives, multi-cloud strategy, and system architecture articles from the CST engineering team.</p>
+</div>
 
-        <div class="service-image">
-            {{ if .Params.image }}
-            <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
-            {{ else if .Params.service_image }}
-            <img src="{{ .Params.service_image | absURL }}" alt="{{ .Title }}">
-            {{ else }}
-            <div
-                style="background: #eee; width: 100%; height: 100%; min-height: 200px; display: flex; align-items: center; justify-content: center; color: #999;">
-                No Image
-            </div>
-            {{ end }}
-        </div>
+<div class="blog-articles-list">
+  {{ range .Pages -}}
+  <article class="blog-list-item">
+    <div class="article-meta">
+      {{ if not .Date.IsZero }}
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+      <span class="meta-dot">&bull;</span>
+      {{ end }}
+      <span>{{ .ReadingTime }} min read</span>
+      {{ if .Params.author }}
+      <span class="meta-dot">&bull;</span>
+      <span>By {{ .Params.author }}</span>
+      {{ end }}
+    </div>
 
-        <div class="service-details">
-            <div class="blog-meta-container">
-                <div class="meta-left-group">
-                    {{ if .Params.author_image }}
-                    <img src="{{ .Params.author_image | absURL }}" alt="{{ .Params.author }}"
-                        class="meta-author-avatar">
-                    {{ else }}
-                    <div class="meta-author-avatar placeholder-avatar"></div>
-                    {{ end }}
+    <h2 class="blog-item-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h2>
 
-                    <div class="meta-text-rows">
-                        <div class="meta-row-one">
-                            <span class="author-name">{{ .Params.author | default "CST Team" }}</span>
-                        </div>
-                        <div class="meta-row-two">
-                            {{ if not .Date.IsZero }}
-                            <span class="meta-date">{{ .Date.Format "Jan 2, 2006" }}</span>
-                            <span class="meta-divider">&bull;</span>
-                            {{ end }}
-                            <span class="meta-read-time">{{ .ReadingTime }} min read</span>
-                        </div>
-                    </div>
-                </div>
+    {{ if .Params.tags }}
+    <div class="article-tags">
+      {{ range .Params.tags }}
+      <span class="tag-pill">#{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
 
-                <div class="meta-right-group">
-                    <button class="share-btn" title="Share Article"
-                        onclick="if(navigator.share){navigator.share({title:'{{ .Title }}',url:'{{ .Permalink }}'}).catch(console.error)}else{navigator.clipboard.writeText('{{ .Permalink }}');alert('Link copied to clipboard!')}">
-                        &#8942;
-                    </button>
-                </div>
-            </div>
+    <p class="blog-item-summary">
+      {{ if .Description }}
+      {{ .Description }}
+      {{ else }}
+      {{ .Summary | truncate 220 }}
+      {{ end }}
+    </p>
 
-            <h2>{{ .Title }}</h2>
-
-            {{ if .Params.tags }}
-            <div class="post-tags-container">
-                {{ range .Params.tags }}
-                <span class="tag-hash">#{{ . }}</span>
-                {{ end }}
-            </div>
-            {{ end }}
-
-            <p>
-                {{ if .Description }}
-                {{ .Description }}
-                {{ else }}
-                {{ .Summary | truncate 160 }}
-                {{ end }}
-            </p>
-            <a href="{{ .Permalink }}" class="read-more-btn">Read More &rarr;</a>
-        </div>
-
-    </article>
-    {{- end }}
+    <div class="blog-item-footer">
+      <a href="{{ .Permalink }}" class="read-more-link">Read article &rarr;</a>
+    </div>
+  </article>
+  {{- end }}
 </div>
 {{- end }}

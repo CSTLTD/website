@@ -1,38 +1,27 @@
 baseURL = 'https://cst-bg.net/'
 locale = 'en-us'
 title = 'CST company website'
-theme = "hyde"
-
-
 
 [params]
   description = "Professional software development company in Svilengrad, BULGARIA"
-  # This section replaces the old top-level 'author'
   [params.author]
     name = "CST LTD"
 
 [menu]
   [[menu.main]]
-    name = "Services"
-    url = "/services/"
-    weight = 15
+    name = "Home"
+    url = "/"
+    weight = 10
   [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
+    name = "Contact & Careers"
+    url = "/contact/"
     weight = 20
   [[menu.main]]
-    name = "Careers"
-    url = "/careers/"
-    weight = 25
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 30
-  [[menu.main]]
     name = "Blog"
-    url ="/blog/"
-    weight = 40
-  [markup]
+    url = "/blog/"
+    weight = 30
+
+[markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # This allows hugo render raw HTML snippets inside Markdown files
+      unsafe = true

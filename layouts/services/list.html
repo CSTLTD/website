@@ -1,36 +1,55 @@
 {{ define "main" -}}
-<div class="services-container">
+<div class="page-header">
+  <h1 class="page-title">{{ .Title }}</h1>
+  {{ if .Description }}
+  <p class="page-description">{{ .Description }}</p>
+  {{ else }}
+  <p class="page-description">Comprehensive software engineering, cloud architecture, and technical consulting solutions tailored for enterprise reliability.</p>
+  {{ end }}
+</div>
 
-  {{ range .Pages.GroupByParam "category" }}
-  <h2 class="service-group-title">{{ .Key }}</h2>
-
-  <div class="services-grid">
-    {{ range .Pages.ByWeight }}
-    <article class="service-card">
-
-      <div class="service-image">
-        {{ if .Params.service_image }}
-        <img src="{{ .Params.service_image | absURL }}" alt="{{ .Title }}">
-        {{ else }}
-        <div style="background: #eee; width: 100%; height: 100%; min-height: 200px;"></div>
-        {{ end }}
+<div class="services-wrapper">
+  {{ if .Pages.GroupByParam "category" }}
+    {{ range .Pages.GroupByParam "category" }}
+    <section class="service-category-group">
+      <h2 class="category-heading">{{ .Key }}</h2>
+      <div class="services-list-grid">
+        {{ range .Pages.ByWeight }}
+        <article class="service-item-card">
+          <div class="service-item-header">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          </div>
+          <p class="service-item-summary">
+            {{ if .Description }}
+              {{ .Description }}
+            {{ else }}
+              {{ .Summary | truncate 200 }}
+            {{ end }}
+          </p>
+          <a href="{{ .Permalink }}" class="service-item-link">Explore service details &rarr;</a>
+        </article>
+        {{- end }}
       </div>
-
-      <div class="service-details">
-        <h2>{{ .Title }}</h2>
-        <p>
+    </section>
+    {{ end }}
+  {{ else }}
+    <div class="services-list-grid">
+      {{ range .Pages.ByWeight }}
+      <article class="service-item-card">
+        <div class="service-item-header">
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        </div>
+        <p class="service-item-summary">
           {{ if .Description }}
-          {{ .Description }}
+            {{ .Description }}
           {{ else }}
-          {{ .Summary | truncate 160 }}
+            {{ .Summary | truncate 200 }}
           {{ end }}
         </p>
-        <a href="{{ .Permalink }}" class="read-more-btn">Read More &rarr;</a>
-      </div>
-
-    </article>
-    {{- end }}
-  </div> {{ end }}
-
+        <a href="{{ .Permalink }}" class="service-item-link">Explore service details &rarr;</a>
+      </article>
+      {{- end }}
+    </div>
+  {{ end }}
 </div>
 {{- end }}

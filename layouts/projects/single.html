@@ -1,17 +1,15 @@
 {{ define "main" }}
-<article class="single-blog-post">
-
-    <h1 class="post-page-title">{{ .Title }}</h1>
-
-    {{ if .Params.image }}
-    <div class="post-feature-banner">
-        <img src="{{ .Params.image | absURL }}" alt="{{ .Title }} Banner">
-    </div>
+<article class="single-post-container">
+  <header class="post-header">
+    <a href="{{ "projects/" | absURL }}" class="back-link">&larr; Back to Projects</a>
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ if .Description }}
+    <p class="post-lead">{{ .Description }}</p>
     {{ end }}
+  </header>
 
-    <div class="post-body-markdown">
-        {{ .Content }}
-    </div>
-
+  <div class="post-body prose">
+    {{ .Content }}
+  </div>
 </article>
 {{ end }}

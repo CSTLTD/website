@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"{{with .Site.Language.Locale}} xml:lang="{{.}}" lang="{{.}}"{{end}}>
+<html xmlns="http://www.w3.org/1999/xhtml"{{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}"{{else}} xml:lang="en" lang="en"{{end}}>
 <head>
-  <link href="https://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  {{ hugo.Generator }}
-
-  <!-- Enable responsiveness on mobile devices-->
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ hugo.Generator }}
 
   {{ if .IsHome -}}
   <title>{{ .Site.Title }}</title>
@@ -15,21 +12,16 @@
   {{- end }}
   <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
 
-  <!-- CSS -->
-  {{ partialCached "head_css.html" "" "" }}
-
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
   <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}images/favicon.png">
 
-  <!-- RSS etc -->
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{{ "css/main.css" | absURL }}">
+  <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
+
+  <!-- RSS -->
   {{ range .AlternativeOutputFormats -}}
     {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
   {{ end -}}
 
-  {{ partial "hook_head_end.html" . }}
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ "css/custom.css" | absURL }}">
-  
 </head>
