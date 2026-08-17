@@ -8,20 +8,14 @@ draft: false
 
 ## Contact Us
 
-<div class="contact-details-card">
-  <div class="contact-item">
-    <strong>Address</strong>
-    <p>ul. Al. Stambolyiski 18<br>Svilengrad 6500, Bulgaria</p>
-  </div>
-  <div class="contact-item">
-    <strong>Email</strong>
-    <p><a href="mailto:contact@cst-bg.net">contact@cst-bg.net</a></p>
-  </div>
-  <div class="contact-item">
-    <strong>Phone</strong>
-    <p><a href="tel:+359877336002">+359 (877) 336002</a></p>
-  </div>
-</div>
+**Address**  
+Svilengrad 6500, Bulgaria
+
+**Email**  
+[contact@cst-bg.net](mailto:contact@cst-bg.net)
+
+**Phone**  
+[+359 (877) 336002](tel:+359877336002)
 
 ### Location Map
 
@@ -50,11 +44,8 @@ Currently, we do not have any open positions. However, we review initiative appl
 
 We appreciate the time and effort put into initiative applications. If you believe you can make a significant contribution to our team, we'd love to hear from you!
 
-<div class="apply-box">
-  <p><strong>How to apply:</strong> Please send your application to <a href="mailto:jobs@cst-bg.net">jobs@cst-bg.net</a> including:</p>
-  <ul>
-    <li>A detailed CV</li>
-    <li>A cover letter outlining your technical background and interests</li>
-    <li>Any relevant portfolio or code repository links (GitHub, GitLab)</li>
-  </ul>
-</div>
+**How to apply:** Please send your application to [jobs@cst-bg.net](mailto:jobs@cst-bg.net) including:
+
+- A detailed CV
+- A cover letter outlining your technical background and interests
+- Any relevant portfolio or code repository links (GitHub, GitLab)
