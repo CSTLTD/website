@@ -1,9 +1,17 @@
 baseURL = 'https://cst-bg.net/'
-locale = 'en-us'
-title = 'CST company website'
+languageCode = 'en-US'
+title = 'CST'
+theme = 'bearblog'
+enableRobotsTXT = true
+
+[taxonomies]
+  tag = "tags"
 
 [params]
   description = "Professional software development company in Svilengrad, BULGARIA"
+  favicon = "images/favicon.png"
+  images = ["images/cst-logo.png"]
+  dateFormat = "2 Jan 2006"
   [params.author]
     name = "CST LTD"
 
@@ -13,13 +21,21 @@ title = 'CST company website'
     url = "/"
     weight = 10
   [[menu.main]]
-    name = "Contact & Careers"
-    url = "/contact/"
+    name = "Services"
+    url = "/services/"
     weight = 20
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 30
   [[menu.main]]
     name = "Blog"
     url = "/blog/"
-    weight = 30
+    weight = 40
+  [[menu.main]]
+    name = "Contact & Careers"
+    url = "/contact/"
+    weight = 50
 
 [markup]
   [markup.goldmark]

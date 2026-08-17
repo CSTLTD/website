@@ -1,0 +1,11 @@
+<ul>
+  {{ range (where .Site.RegularPages "Section" "clients").ByWeight }}
+  <li>
+    {{ if .Params.client_url }}
+    <a href="{{ .Params.client_url }}" rel="noopener">{{ .Title }}</a>
+    {{ else }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    {{ end }}
+  </li>
+  {{ end }}
+</ul>

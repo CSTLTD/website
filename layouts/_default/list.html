@@ -1,26 +1,36 @@
-{{ define "main" -}}
-<div class="page-header">
-  <h1 class="page-title">{{ .Title }}</h1>
-  {{ if .Description }}
-  <p class="page-description">{{ .Description }}</p>
-  {{ end }}
-</div>
-
-<div class="articles-list">
-  {{ range .Pages -}}
-  <article class="article-item">
-    <h2 class="article-title">
+{{ define "main" }}
+{{ if .Data.Singular }}
+<h3 style="margin-bottom:0">Filtering for "{{ .Title }}"</h3>
+<small><a href="{{ "blog" | relURL }}">Remove filter</a></small>
+{{ else }}
+<h1>{{ .Title }}</h1>
+{{ with .Description }}<p>{{ . }}</p>{{ end }}
+{{ end }}
+<content>
+  <ul class="blog-posts">
+    {{ range .Pages }}
+    <li>
+      <span>
+        <i>
+          <time datetime='{{ .Date.Format "2006-01-02" }}'>
+            {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+          </time>
+        </i>
+      </span>
       <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h2>
-    <p class="article-summary">
-      {{ if .Description }}
-      {{ .Description }}
-      {{ else }}
-      {{ .Summary | truncate 180 }}
-      {{ end }}
-    </p>
-    <a href="{{ .Permalink }}" class="article-read-more">Read details &rarr;</a>
-  </article>
-  {{- end }}
-</div>
-{{- end }}
+    </li>
+    {{ else }}
+    <li>No posts yet</li>
+    {{ end }}
+  </ul>
+</content>
+{{ if not .Data.Singular }}
+<small>
+  <div>
+    {{ range .Site.Taxonomies.tags }}
+    <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;
+    {{ end }}
+  </div>
+</small>
+{{ end }}
+{{ end }}

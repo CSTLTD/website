@@ -1,11 +1,23 @@
 ---
-title: "About CST"
-weight: 10
-featured: true
+title: "Computer Systems and Technologies"
 date: 2025-01-01T16:00:47+02:00
 draft: false
 ---
 
-At CST, we specialize in providing customized software development solutions to meet the unique needs of our clients. Our expertise includes DevOps, Big Data, Multi-Cloud and IoT, and Blockchain. We have a team of experts in these areas that are dedicated to delivering cutting-edge solutions that are functional, reliable and of high-quality. Our services include software architecture and development, end-to-end product and platform development, system administration, and support. Our mission is to turn our clients' vision into reality, with a focus on meeting their specific needs and exceeding their expectations.
+CST (Computer Systems and Technologies LTD) is a software development company based in Svilengrad, Bulgaria. We specialize in customized software development and cloud infrastructure solutions, with core expertise in DevOps, Cloud &amp; Multi-Cloud architectures, Data Spaces, and Blockchain engineering.
 
+## Services
 
+{{< services-list >}}
+
+## Projects
+
+{{< projects-list >}}
+
+## Clients &amp; Partners
+
+{{< clients-list >}}
+
+## Contact
+
+Interested in working with us? [Get in touch](/contact/).

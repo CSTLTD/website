@@ -1,0 +1,7 @@
+<ul>
+  {{ range (where .Site.RegularPages "Section" "projects").ByWeight }}
+  <li>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>{{ with .Description }} &mdash; {{ . | truncate 140 }}{{ end }}
+  </li>
+  {{ end }}
+</ul>

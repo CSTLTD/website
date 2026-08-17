@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ with .Description }}<p>{{ . }}</p>{{ end }}
+<content>
+  <ul>
+        {{ range .Pages.ByWeight }}
+    <li>
+      {{ if .Params.client_url }}
+      <a href="{{ .Params.client_url }}" rel="noopener">{{ .Title }}</a>
+      {{ else }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</content>
+{{ end }}

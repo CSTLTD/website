@@ -1,28 +1,13 @@
 {{ define "main" }}
-<div class="page-header">
-  <h1 class="page-title">{{ .Title }}</h1>
-  <p class="page-description">Key engineering initiatives, research contributions, and open infrastructure platforms built by CST.</p>
-</div>
-
-<div class="projects-list-grid">
-  {{ range .Pages }}
-  <article class="project-item-card">
-    <div class="project-card-body">
-      <h2 class="project-card-title">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </h2>
-      <p class="project-card-summary">
-        {{ if .Description }}
-          {{ .Description }}
-        {{ else }}
-          {{ .Summary | truncate 200 }}
-        {{ end }}
-      </p>
-      <div class="project-card-footer">
-        <a href="{{ .Permalink }}" class="project-item-link">View project case study &rarr;</a>
-      </div>
-    </div>
-  </article>
-  {{ end }}
-</div>
+<h1>{{ .Title }}</h1>
+{{ with .Description }}<p>{{ . }}</p>{{ end }}
+<content>
+  <ul>
+        {{ range .Pages.ByWeight }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>{{ with .Description }} &mdash; {{ . | truncate 140 }}{{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</content>
 {{ end }}
