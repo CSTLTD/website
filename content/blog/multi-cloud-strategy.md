@@ -1,6 +1,6 @@
 ---
 title: "Why Should Companies Develop a Multi-Cloud Strategy?"
-date: 2026-05-06T11:37:34+03:00
+date: 2021-03-01T11:37:34+03:00
 author: "Angel Kafazov"
 author_image: "/images/Angel.jpg"
 tags: ["daiteap", "multicloud", "cloud", "strategy", "devops", "infrastructure"]
