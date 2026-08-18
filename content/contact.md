@@ -1,5 +1,5 @@
 ---
-title: "Contact & Careers"
+title: "Contact"
 aliases: ["/careers/"]
 featured: false
 date: 2026-05-06T11:37:34+03:00
@@ -9,6 +9,7 @@ draft: false
 ## Contact Us
 
 **Address**  
+ul. General Strukov 5, vh. B, et. 4, ap. 12  
 Svilengrad 6500, Bulgaria
 
 **Email**  
@@ -16,10 +17,6 @@ Svilengrad 6500, Bulgaria
 
 **Phone**  
 [+359 (877) 336002](tel:+359877336002)
-
-### Location Map
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.919936644257!2d26.200745076454623!3d41.76538397246323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b2cf947ae2cfbd%3A0x53c90a7adc027a1!2sSi%20Es%20Ti!5e0!3m2!1sen!2sbg!4v1778252976691!5m2!1sen!2sbg" width="100%" height="400" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ---
 
