@@ -6,7 +6,7 @@
         {{ range .Pages.ByWeight }}
     <li>
       {{ if .Params.client_url }}
-      <a href="{{ .Params.client_url }}" rel="noopener">{{ .Title }}</a>
+      <a href="{{ .Params.client_url }}" target="_blank" rel="noopener noreferrer">{{ .Title }}</a>
       {{ else }}
       <a href="{{ .Permalink }}">{{ .Title }}</a>
       {{ end }}

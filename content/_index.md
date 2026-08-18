@@ -40,23 +40,9 @@ Technology strategy, architecture consulting, and dedicated nearshore engineerin
 
 ## Selected Projects {#projects}
 
-### GAIA-X Federation Services
-*T-Systems International* &middot; 2022–2023 — Core federation services for the European GAIA-X ecosystem — identity & trust, federated catalog, and sovereign data exchange — deployed on Kubernetes with Helm-based CI/CD.
+We have delivered platforms and products for some of Europe's largest enterprises and research programs — GAIA-X federation services, a multi-cloud orchestrator, blockchain networks, AI customer-service systems, and Big Data infrastructure.
 
-### ALTERNATIVE
-*EU Horizon 2020* &middot; 2021–2024 — A cloud data platform and CKAN-based data exchange that power machine-learning cardiotoxicity research across a European consortium.
-
-### Daiteap Multi-Cloud Platform
-*Daiteap* &middot; 2019–2023 — A self-service orchestrator for managing Kubernetes clusters, virtual machines, and S3 storage across AWS, GCP, Azure, and edge devices.
-
-### NOMAD
-*Deutsche Telekom* &middot; 2018–2022 — A Hyperledger Fabric platform for signing roaming and mobile data contracts between mobile network operators worldwide.
-
-### Digital Service Assistant (ELIZA / DSA)
-*Deutsche Telekom* &middot; 2016–2020 — An AI customer-support assistant that automates parts of customer service — built as a microservice architecture on Kubernetes with Big Data ingestion and continuous learning.
-
-### DataLab / HALO
-*Deutsche Telekom* &middot; 2015–2019 — A Big Data infrastructure-as-a-service platform on Open Telekom Cloud, automating Hadoop cluster provisioning with Kerberos, LDAP, and monitoring.
+[Explore our projects &rarr;](/projects/)
 
 ## Technologies {#technologies}
 
