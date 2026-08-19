@@ -1,5 +1,6 @@
 ---
-title: "Computer Systems and Technologies"
+title: "Professional Software Development & IT Services"
+description: "CST is a professional IT service provider in Svilengrad, Bulgaria — custom software, cloud & multi-cloud, DevOps, Big Data, and Blockchain engineering."
 date: 2025-01-01T16:00:47+02:00
 draft: false
 ---

@@ -10,7 +10,7 @@ enableRobotsTXT = true
 [params]
   description = "CST is a professional IT service provider in Svilengrad, Bulgaria — custom software, cloud & multi-cloud, DevOps, Big Data, and Blockchain engineering."
   favicon = "images/favicon.png"
-  images = ["images/cst-logo.png"]
+  images = ["images/og-cover.png"]
   dateFormat = "2 Jan 2006"
   [params.author]
     name = "CST LTD"

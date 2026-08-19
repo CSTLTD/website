@@ -1,0 +1,39 @@
+<link rel="canonical" href="{{ .Permalink }}">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "{{ .Site.BaseURL }}#organization",
+      "name": "CST",
+      "legalName": "Computer Systems and Technologies EOOD",
+      "url": "{{ .Site.BaseURL }}",
+      "logo": "{{ .Site.BaseURL }}images/cst-logo.png",
+      "description": "{{ .Site.Params.description }}",
+      "email": "contact@cst-bg.net",
+      "telephone": "+359 877 336002",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. General Strukov 5",
+        "addressLocality": "Svilengrad",
+        "postalCode": "6500",
+        "addressCountry": "BG"
+      },
+      "sameAs": [
+        "https://github.com/CSTLTD/",
+        "https://www.linkedin.com/company/cst-eood/",
+        "https://twitter.com/cst_eood",
+        "https://www.facebook.com/csteood"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "name": "CST",
+      "url": "{{ .Site.BaseURL }}",
+      "publisher": { "@id": "{{ .Site.BaseURL }}#organization" }
+    }
+  ]
+}
+</script>
