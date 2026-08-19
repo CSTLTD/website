@@ -1,6 +1,6 @@
 ---
 title: "Why is application portability difficult and how to prepare for it"
-date: 2026-05-06T11:37:34+03:00
+date: 2021-03-09T11:37:34+03:00
 author: "Angel Kafazov"
 author_image: "/images/Angel.jpg"
 tags: ["portability", "cloud", "migration", "devops", "infrastructure", "application"]

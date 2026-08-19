@@ -1,38 +1,35 @@
 baseURL = 'https://cst-bg.net/'
-locale = 'en-us'
-title = 'CST company website'
-theme = "hyde"
+locale = 'en-US'
+title = 'CST'
+theme = 'bearblog'
+enableRobotsTXT = true
 
-
+[taxonomies]
+  tag = "tags"
 
 [params]
-  description = "Professional software development company in Svilengrad, BULGARIA"
-  # This section replaces the old top-level 'author'
+  description = "CST is a professional IT service provider in Svilengrad, Bulgaria — custom software, cloud & multi-cloud, DevOps, Big Data, and Blockchain engineering."
+  favicon = "images/favicon.png"
+  images = ["images/cst-logo.png"]
+  dateFormat = "2 Jan 2006"
   [params.author]
     name = "CST LTD"
 
 [menu]
   [[menu.main]]
-    name = "Services"
-    url = "/services/"
-    weight = 15
-  [[menu.main]]
-    name = "Projects"
-    url = "/projects/"
-    weight = 20
-  [[menu.main]]
-    name = "Careers"
-    url = "/careers/"
-    weight = 25
+    name = "Home"
+    url = "/"
+    weight = 10
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 30
+    weight = 20
   [[menu.main]]
     name = "Blog"
-    url ="/blog/"
-    weight = 40
-  [markup]
+    url = "/blog/"
+    weight = 30
+
+[markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # This allows hugo render raw HTML snippets inside Markdown files
+      unsafe = true

@@ -15,7 +15,7 @@ Al. Stambolyiski 18
 Svilengrad 6500
 Bulgaria
 
-Tel: +359 (877) 366002
+Tel: +359 (877) 336002
 
 contact@cst-bg.net
 

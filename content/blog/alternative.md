@@ -1,6 +1,6 @@
 ---
 title: "ALTERNATIVE"
-date: 2026-05-06T11:37:34+03:00
+date: 2022-01-26T11:37:34+03:00
 author: "Angel Kafazov"
 author_image: "/images/Angel.jpg"
 tags:

@@ -1,6 +1,6 @@
 ---
 title: "Why Is Cloud Integration The Evolution Of Multi-Cloud"
-date: 2026-05-06T11:37:34+03:00
+date: 2021-03-19T11:37:34+03:00
 author: "Angel Kafazov"
 author_image: "/images/Angel.jpg"
 tags: ["multicloud", "hybridcloud", "cloud", "integration", "devops", "daiteap"]

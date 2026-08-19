@@ -1,0 +1,19 @@
+# Build output
+public/
+resources/
+.hugo_build.lock
+
+# Node / tooling
+node_modules/
+.opencode/node_modules/
+
+# Local caches / scratch
+tmp/
+
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+*.Zone.Identifier
+.idea/
+.vscode/
+*.swp

@@ -1,6 +1,6 @@
 ---
 title: "Why is it important to learn GIT at expert level?"
-date: 2026-05-06T11:37:34+03:00
+date: 2021-03-05T11:37:34+03:00
 author: "Angel Kafazov"
 author_image: "/images/Angel.jpg"
 tags: ["git", "versioncontrol", "programming", "education"]
