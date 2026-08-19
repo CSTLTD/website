@@ -1,5 +1,5 @@
 baseURL = 'https://cst-bg.net/'
-languageCode = 'en-US'
+locale = 'en-US'
 title = 'CST'
 theme = 'bearblog'
 enableRobotsTXT = true
