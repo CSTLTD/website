@@ -9,15 +9,22 @@
 <content>
   <ul class="blog-posts">
     {{ range .Pages }}
-    <li>
-      <span>
-        <i>
-          <time datetime='{{ .Date.Format "2006-01-02" }}'>
-            {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
-          </time>
-        </i>
-      </span>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <li class="blog-post-item">
+      {{ if .Params.image }}
+      <a href="{{ .Permalink }}" class="blog-post-thumb" tabindex="-1" aria-hidden="true">
+        <img src="{{ .Params.image | absURL }}" alt="" loading="lazy">
+      </a>
+      {{ end }}
+      <div class="blog-post-info">
+        <span class="blog-post-date">
+          <i>
+            <time datetime='{{ .Date.Format "2006-01-02" }}'>
+              {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+            </time>
+          </i>
+        </span>
+        <a href="{{ .Permalink }}" class="blog-post-title">{{ .Title }}</a>
+      </div>
     </li>
     {{ else }}
     <li>No posts yet</li>

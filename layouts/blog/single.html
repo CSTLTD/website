@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ if .Params.image }}
+<div class="post-feature">
+  <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+</div>
+{{ end }}
+<h1>{{ .Title }}</h1>
+<p class="post-meta">
+  <i>
+    <time datetime='{{ .Date.Format "2006-01-02" }}'>
+      {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+    </time>
+  </i>
+  {{ with .Params.author }}
+  <span> &middot; By {{ . }}</span>
+  {{ end }}
+  <span> &middot; {{ .ReadingTime }} min read</span>
+</p>
+<content>
+  {{ .Content }}
+</content>
+{{ if (.Param "enablePostNavigator") }}
+{{- partial "post_navigator.html" . -}}
+{{ end }}
+<p>
+  {{ range (.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+  {{ end }}
+</p>
+{{ end }}
