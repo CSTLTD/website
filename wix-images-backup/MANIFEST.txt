@@ -1,0 +1,37 @@
+Images fetched from https://angelkafazov.wixsite.com/csteood (Wix backup of cst-bg.net)
+Note: size matches are byte-size coincidences; 'same-as-static' entries are very likely the same files.
+
+0fdef751204647a3bbd7eaa2827ed4f9.png                                833  same-as-static: company-logo.svg
+11062b_4570e760472646f4a81cfc96acef0877~mv2.jpg                 2213733  NEW
+3df24a_071e39f1ba49471a9c78a49984036a2b~mv2.png                   30533  same-as-static: alternative-logo-1024x819.png
+3df24a_2bfdbdece9784275b3bcd835a09e5fc0~mv2.png                   60960  same-as-static: Daiteap_Logo_2_white.png
+3df24a_4492e2983e3f4767b1ccc85983248051~mv2.jpg                  136693  same-as-static: cst_blog_picture_edited.jpg
+3df24a_6f041a07c6bd480e91bd73572695b15a~mv2.png                  187501  same-as-static: SAP_logo.png
+3df24a_77148240c7cc441f8f378ce2e010b39d~mv2.jpg                   99630  same-as-static: cloud_technology.jpg
+3df24a_8e0b5beedeb144f89f324453f3791afc~mv2.png                  326832  NEW
+3df24a_a5b28b6d632b43ff9f3d2f86679ce4c1~mv2.jpg                    5937  same-as-static: t_systems_logo_pink_edited.jpg
+3df24a_d1a93740e2004851847daccb75df58f1~mv2.png                   16668  same-as-static: alternative-logo-resized.png
+3df24a_fb793679fd19422eb3d7936c8eccd04b~mv2.jpg                   32241  same-as-static: gaia_x_logo.jpg
+657d93c686e44e2d9b543a6e1e42cbca.jpg                            3852203  NEW
+6ea5b4a88f0b4f91945b40499aa0af00.png                               1213  NEW
+72d1eb_0c79711abffe491a9cebd45214cc3f54~mv2.png                    6431  same-as-static: eu_flag.png
+72d1eb_3b6449a8636d4cb8bf8b070ea65de812~mv2.jpg                  318728  same-as-static: Angel_and_Martin.jpg
+72d1eb_3caf6d337ca5423b89ef12c7138f802b~mv2.jpg                  827207  same-as-static: Angel_at_IONOSsummit.jpg
+72d1eb_8f2a2a6a2ce14c99b6dbdc2e5590c452~mv2.png                    6247  same-as-static: cst-logo.png
+72d1eb_940559fef70746fe8a10ba645fbd4cb6~mv2.png                  109783  same-as-static: multi-cloud-integration-layer.png
+72d1eb_aa1ed4906acb47c69dcd97fca0d9b88d~mv2.jpg                  897445  same-as-static: ionos-summit.jpg
+72d1eb_e171b14572784805a0344d3cc8ccd4d6~mv2.png                  186608  same-as-static: daitera-cicd.png
+72d1eb_ffb1132de97e4308ba033288722dc14f~mv2.jpeg                 742427  same-as-static: computer-programming.jpeg
+Business Consultation.jpeg                                      6937995  NEW
+Daitera_Logos_xlarge_edited_edited.png                            72357  same-as-static: Daitera_Logos_xlarge_edited.png, Daitera_Logos_xlarge_edited_edited.png
+Image by Growtika.jpg                                            642332  NEW
+Prilojenie 1_3 Plakat си ес ти еоод1.jpg                         112366  same-as-static: Prilojenie 1.3 Plakat си ес ти еоод1.jpg
+Software Engineers_edited.jpg                                    879586  same-as-static: Software Engineers_edited.jpg
+Whitepaper-screenshot.png                                        107428  same-as-static: Whitepaper-screenshot.png
+blockchain_smart_contract.jpg                                    309176  same-as-static: blockchain_smart_contract.jpg
+c7d035ba85f6486680c2facedecdcf4d.png                               1900  NEW
+deutsche_telekom_logo.png                                          4829  same-as-static: deutsche_telekom_logo.png
+frodexim-logo-white_edited.png                                     2944  same-as-static: frodexim-logo-white_edited.png
+logo_op_brand_bg.png                                             267634  same-as-static: logo_op_brand_bg.png
+nsplsh_4f5d78bad3474b3e8c73cf5cd928e526~mv2.jpg                13006434  NEW
+trilobyte_logo.png                                                 6844  same-as-static: trilobyte_logo.png

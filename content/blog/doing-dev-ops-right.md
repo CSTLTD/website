@@ -1,6 +1,6 @@
 ---
 title: "13 clues you are doing DevOps right"
-date: 2026-05-06T11:37:34+03:00
+date: 2021-03-11T11:37:34+03:00
 author: "Angel Kafazov"
 author_image: "/images/Angel.jpg"
 tags: ["devops", "cicd", "deployment", "monitoring", "logging"]

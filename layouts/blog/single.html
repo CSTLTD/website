@@ -1,55 +1,30 @@
 {{ define "main" }}
-<article class="single-blog-post">
-  
-  <div class="blog-meta-container">
-    <div class="meta-left-group">
-      {{ if .Params.author_image }}
-      <img src="{{ .Params.author_image | absURL }}" alt="{{ .Params.author }}" class="meta-author-avatar">
-      {{ else }}
-      <div class="meta-author-avatar placeholder-avatar"></div>
-      {{ end }}
-      
-      <div class="meta-text-rows">
-        <div class="meta-row-one">
-          <span class="author-name">{{ .Params.author | default "CST Team" }}</span>
-        </div>
-        <div class="meta-row-two">
-          {{ if not .Date.IsZero }}
-          <span class="meta-date">{{ .Date.Format "Jan 2, 2006" }}</span>
-          <span class="meta-divider">&bull;</span>
-          {{ end }}
-          <span class="meta-read-time">{{ .ReadingTime }} min read</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="meta-right-group">
-      <button class="share-btn" title="Share Article" 
-              onclick="if(navigator.share){navigator.share({title:'{{ .Title }}',url:'{{ .Permalink }}'}).catch(console.error)}else{navigator.clipboard.writeText('{{ .Permalink }}');alert('Link copied to clipboard!')}">
-        &#8942;
-      </button>
-    </div>
-  </div>
-
-  <h1 class="post-page-title">{{ .Title }}</h1>
-
-  {{ if .Params.tags }}
-  <div class="post-tags-container">
-    {{ range .Params.tags }}
-    <span class="tag-hash">#{{ . }}</span>
-    {{ end }}
-  </div>
+{{ if .Params.image }}
+<div class="post-feature">
+  <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
+</div>
+{{ end }}
+<h1>{{ .Title }}</h1>
+<p class="post-meta">
+  <i>
+    <time datetime='{{ .Date.Format "2006-01-02" }}'>
+      {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+    </time>
+  </i>
+  {{ with .Params.author }}
+  <span> &middot; By {{ . }}</span>
   {{ end }}
-
-  {{ if .Params.image }}
-  <div class="post-feature-banner">
-    <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}">
-  </div>
+  <span> &middot; {{ .ReadingTime }} min read</span>
+</p>
+<content>
+  {{ .Content }}
+</content>
+{{ if (.Param "enablePostNavigator") }}
+{{- partial "post_navigator.html" . -}}
+{{ end }}
+<p>
+  {{ range (.GetTerms "tags") }}
+  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
   {{ end }}
-
-  <div class="post-body-markdown">
-    {{ .Content }}
-  </div>
-
-</article>
+</p>
 {{ end }}

@@ -1,6 +1,6 @@
 ---
 title: "IONOS Summit 2023"
-date: 2026-05-06T11:37:34+03:00
+date: 2023-10-27T11:37:34+03:00
 author: "Angel Kafazov"
 author_image: "/images/Angel.jpg"
 tags: ["LevelUp", "IONOSsummit", "CST", "ALTERNATIVE", "TechInnovation"]
@@ -17,7 +17,7 @@ As the CTO of CST, I had the privilege of attending the #IONOSsummit 2023 in Ber
 
 <div class="blog-image-row">
   <img src="/images/ionos-summit.jpg" alt="Conference hall with attendees at IONOS Summit 2023">
-  <img src="/images/Angel_and_Martin.jpeg.jpg" alt="Angel and Martin">
+  <img src="/images/Angel_and_Martin.jpg" alt="Angel and Martin">
   <img src="/images/Angel_at_IONOSsummit.jpg" alt="Angel at IONOS Summit">
 </div>
 
