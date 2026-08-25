@@ -9,8 +9,9 @@ draft: false
 ## Contact Us
 
 **Address**  
-ul. General Strukov 5, vh. B, et. 4, ap. 12  
-Svilengrad 6500, Bulgaria
+bul. Bulgaria 113  
+6500 Svilengrad  
+BULGARIA
 
 **Email**  
 [contact@cst-bg.net](mailto:contact@cst-bg.net)

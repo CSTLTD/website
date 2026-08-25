@@ -72,7 +72,7 @@ Founded in 1997, CST has grown from an IT hardware and software company into a f
 
 ## Contact {#contact}
 
-**Address:** ul. General Strukov 5, Svilengrad 6500, Bulgaria
+**Address:** bul. Bulgaria 113, 6500 Svilengrad, Bulgaria
 **Phone:** +359 877 336002
 **Email:** [contact@cst-bg.net](mailto:contact@cst-bg.net)
 
